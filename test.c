@@ -1,23 +1,13 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "ft_printf.h"
 
 int	main(void)
 {
-	int	i;
-	int	j;
-	int	*p;
-	void	*truc;
+	int	a;
+	int	b;
 
-	i = 48;
-	j = 42;
-	p = &i;
-	truc = &i;
-	printf("%jhgjhgjzhgcdzgc", i, j);
-	// printf("%d\n", i);
-	// printf("%p\n", &i);
-	// printf("%p\n", &truc);
-	// printf("%p\n", &p);
-	// printf("%d\n", *(int *)truc);
-	// printf("%c\n", *(char *)p);
+	a = 0;
+	b = 0;
+	b = printf(" NULL %s NULL", NULL);
+	printf("%d", b);
 	return (0);
 }

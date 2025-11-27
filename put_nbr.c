@@ -6,7 +6,7 @@
 /*   By: minpple <minpple@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 14:46:05 by minpple           #+#    #+#             */
-/*   Updated: 2025/11/27 18:38:40 by minpple          ###   ########.fr       */
+/*   Updated: 2025/11/27 18:40:47 by minpple          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,11 +62,6 @@ int	ft_x(unsigned int x, char *base, int n)
 
 int	ft_bigx(unsigned int X, char *base, int n)
 {
-	if (X == -2147483648)
-	{
-		write(1, "-80000000", 11);
-		return (9);
-	}
 	if (X >= 16)
 		n = ft_bigx(X / 16, base, n++);
 	X = X % 16;

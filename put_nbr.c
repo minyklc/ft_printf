@@ -6,7 +6,7 @@
 /*   By: minpple <minpple@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 14:46:05 by minpple           #+#    #+#             */
-/*   Updated: 2025/11/27 18:40:47 by minpple          ###   ########.fr       */
+/*   Updated: 2025/11/27 18:41:59 by minpple          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_p(unsigned long long p, char *base, int n)
 		n = ft_p(p / 16, base, n + 1);
 	p = p % 16;
 	write(1, &base[p], 1);
-	return (n + 1);
+	return (n);
 }
 
 int	ft_d(int d, int n)

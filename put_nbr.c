@@ -6,7 +6,7 @@
 /*   By: minpple <minpple@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 14:46:05 by minpple           #+#    #+#             */
-/*   Updated: 2025/11/27 18:21:12 by minpple          ###   ########.fr       */
+/*   Updated: 2025/11/27 18:38:40 by minpple          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_p(unsigned long long p, char *base, int n)
 		write(1, "(nil)", 5);
 		return (5);
 	}
-	if (n == 0)
+	if (n == 1)
 	{
 		write(1, "0x", 2);
 		n = n + 2;

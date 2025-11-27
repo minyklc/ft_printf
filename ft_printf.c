@@ -6,7 +6,7 @@
 /*   By: minpple <minpple@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 15:33:42 by minpple           #+#    #+#             */
-/*   Updated: 2025/11/27 18:27:13 by minpple          ###   ########.fr       */
+/*   Updated: 2025/11/27 18:38:52 by minpple          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_conversion(va_list ap, char c)
 	else if (c == 's')
 		n += ft_s(va_arg(ap, char *));
 	else if (c == 'p')
-		n += ft_p(va_arg(ap, unsigned long long), "0123456789abcdef", n);
+		n += ft_p(va_arg(ap, unsigned long long), "0123456789abcdef", 1);
 	else if (c == 'd' || c == 'i')
 		n += ft_d(va_arg(ap, int), n);
 	else if (c == 'u')

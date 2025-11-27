@@ -6,7 +6,7 @@
 /*   By: minpple <minpple@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 15:33:42 by minpple           #+#    #+#             */
-/*   Updated: 2025/11/24 19:43:26 by minpple          ###   ########.fr       */
+/*   Updated: 2025/11/25 01:48:31 by minpple          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int	ft_printf(const char *str, ...)
 			//va_arg(ap, int);
 			i++;
 		}
-		if (str[i])
+		else if (str[i])
 		{
 			count += ft_c(str[i]);
 			i++;

@@ -6,7 +6,7 @@
 /*   By: minpple <minpple@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 15:33:42 by minpple           #+#    #+#             */
-/*   Updated: 2025/11/27 18:38:52 by minpple          ###   ########.fr       */
+/*   Updated: 2025/11/27 18:43:37 by minpple          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,9 @@ int	ft_conversion(va_list ap, char c)
 
 int	ft_printf(const char *str, ...)
 {
-	va_list ap;
-	int	i;
-	int	count;
+	va_list	ap;
+	int		i;
+	int		count;
 
 	va_start(ap, str);
 	i = 0;
@@ -56,7 +56,6 @@ int	ft_printf(const char *str, ...)
 		{
 			i++;
 			count += ft_conversion(ap, str[i]);
-			//va_arg(ap, int);
 			i++;
 		}
 		else if (str[i])

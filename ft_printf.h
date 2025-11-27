@@ -6,7 +6,7 @@
 /*   By: minpple <minpple@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 13:54:38 by minpple           #+#    #+#             */
-/*   Updated: 2025/11/24 16:58:03 by minpple          ###   ########.fr       */
+/*   Updated: 2025/11/27 18:21:20 by minpple          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 
 # include <unistd.h>
 # include <stdarg.h>
-# include <stdio.h>
+//# include <stdio.h>
 
 int		ft_c(int c);
 int		ft_s(char *s);
-int		ft_p(unsigned long p, char *base, int n);
+int		ft_p(unsigned long long p, char *base, int n);
 int		ft_d(int d, int n);
-int		ft_u(unsigned long u, int n);
-int		ft_x(unsigned long x, char *base, int n);
-int		ft_bigx(long X, char *base, int n);
+int		ft_u(unsigned int u, int n);
+int		ft_x(unsigned int x, char *base, int n);
+int		ft_bigx(unsigned int X, char *base, int n);
 int		ft_percent(void);
 void	ft_putchar(char c);
 int		ft_printf(const char *str, ...);

@@ -6,7 +6,7 @@
 /*   By: minpple <minpple@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 15:33:42 by minpple           #+#    #+#             */
-/*   Updated: 2025/11/25 01:48:31 by minpple          ###   ########.fr       */
+/*   Updated: 2025/11/27 18:21:34 by minpple          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,15 @@ int	ft_conversion(va_list ap, char c)
 	else if (c == 's')
 		n += ft_s(va_arg(ap, char *));
 	else if (c == 'p')
-		n += ft_p(va_arg(ap, unsigned long), "0123456789abcdef", n);
+		n += ft_p(va_arg(ap, unsigned long long), "0123456789abcdef", n);
 	else if (c == 'd' || c == 'i')
 		n += ft_d(va_arg(ap, int), n);
 	else if (c == 'u')
-		n += ft_u(va_arg(ap, unsigned long), n);
+		n += ft_u(va_arg(ap, unsigned int), n);
 	else if (c == 'x')
-		n += ft_x(va_arg(ap, unsigned long), "0123456789abcdef", n);
+		n += ft_x(va_arg(ap, unsigned int), "0123456789abcdef", n);
 	else if (c == 'X')
-		n += ft_bigx(va_arg(ap, unsigned long), "0123456789ABCDEF", n);
+		n += ft_bigx(va_arg(ap, unsigned int), "0123456789ABCDEF", n);
 	else if (c == '%')
 		n += ft_percent();
 	return (n);
@@ -56,7 +56,7 @@ int	ft_printf(const char *str, ...)
 		{
 			i++;
 			count += ft_conversion(ap, str[i]);
-			//va_arg(ap, int);
+			va_arg(ap, int);
 			i++;
 		}
 		else if (str[i])
@@ -93,7 +93,7 @@ int	ft_printf(const char *str, ...)
 // 	return (0);
 // }
 
-#include <limits.h>
+/* #include <limits.h>
 
 void test_char(void)
 {
@@ -245,3 +245,4 @@ int main(void)
 	return (0);
 }
 
+ */

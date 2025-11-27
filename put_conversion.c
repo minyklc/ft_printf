@@ -6,7 +6,7 @@
 /*   By: minpple <minpple@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 15:44:04 by minpple           #+#    #+#             */
-/*   Updated: 2025/11/24 16:31:30 by minpple          ###   ########.fr       */
+/*   Updated: 2025/11/27 15:27:12 by minpple          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,8 @@ int	ft_s(char *s)
 	return (i);
 }
 
-int	ft_u(unsigned long u, int n)
+int	ft_u(unsigned int u, int n)
 {
-	if (u < 0)
-		u = -u;
 	if (u > 9)
 		n = ft_u(u / 10, n++);
 	u = u % 10 + 48;

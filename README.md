@@ -6,7 +6,7 @@ _This project has been created as part of the 42 curriculum by msuizu_
 |	it takes in arguments at least one string, that can contains specifiers with '%' to represents conversions.
 
 **...Instructions...**
-|	check with 'norminette', uncomment the main in ft_print.c then 'make' and compile with 
+|	check with 'norminette', add a main.c or uncomment the main in ft_print.c then 'make' and compile with 
 |	'cc -Wall -Werror -Wextra **libftprintf.a**' + 'ft_printf.c'
 
 **...Resources...**

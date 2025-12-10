@@ -6,7 +6,7 @@
 /*   By: minpple <minpple@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 14:46:05 by minpple           #+#    #+#             */
-/*   Updated: 2025/11/27 18:41:59 by minpple          ###   ########.fr       */
+/*   Updated: 2025/12/10 15:28:09 by minpple          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,14 @@ int	ft_bigx(unsigned int X, char *base, int n)
 		n = ft_bigx(X / 16, base, n++);
 	X = X % 16;
 	write(1, &base[X], 1);
+	return (n + 1);
+}
+
+int	ft_u(unsigned int u, int n)
+{
+	if (u > 9)
+		n = ft_u(u / 10, n++);
+	u = u % 10 + 48;
+	write(1, &u, 1);
 	return (n + 1);
 }

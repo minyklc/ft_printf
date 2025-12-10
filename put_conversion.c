@@ -6,7 +6,7 @@
 /*   By: minpple <minpple@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 15:44:04 by minpple           #+#    #+#             */
-/*   Updated: 2025/11/27 15:27:12 by minpple          ###   ########.fr       */
+/*   Updated: 2025/12/10 15:28:03 by minpple          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,15 +34,6 @@ int	ft_s(char *s)
 		i++;
 	}
 	return (i);
-}
-
-int	ft_u(unsigned int u, int n)
-{
-	if (u > 9)
-		n = ft_u(u / 10, n++);
-	u = u % 10 + 48;
-	write(1, &u, 1);
-	return (n + 1);
 }
 
 int	ft_percent(void)

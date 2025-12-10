@@ -6,7 +6,7 @@
 /*   By: minpple <minpple@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 15:33:42 by minpple           #+#    #+#             */
-/*   Updated: 2025/11/27 18:43:37 by minpple          ###   ########.fr       */
+/*   Updated: 2025/12/10 15:47:46 by minpple          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,19 +50,18 @@ int	ft_printf(const char *str, ...)
 	va_start(ap, str);
 	i = 0;
 	count = 0;
+	if (!str)
+		return (-1);
 	while (str[i])
 	{
 		if (str[i] == '%')
 		{
 			i++;
 			count += ft_conversion(ap, str[i]);
-			i++;
 		}
-		else if (str[i])
-		{
+		else
 			count += ft_c(str[i]);
-			i++;
-		}
+		i++;
 	}
 	va_end(ap);
 	return (count);

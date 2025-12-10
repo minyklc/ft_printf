@@ -91,7 +91,9 @@ int	ft_printf(const char *str, ...)
 // 	return (0);
 // }
 
-/* #include <limits.h>
+/*
+#include <limits.h>
+#include <stdio.h>
 
 void test_char(void)
 {
@@ -242,5 +244,4 @@ int main(void)
 
 	return (0);
 }
-
- */
+*/

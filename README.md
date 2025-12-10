@@ -17,7 +17,6 @@ _This project has been created as part of the 42 curriculum by msuizu_
 \#	ft_print.c : contains prototype of ft_printf() + filters for conversions
 \#	put_conversion : conversions that do not imply numbers
 \#	put_nbr : conversions that deal with numbers recursively
-\#	libft : personal library
 \#	ft_printf.h : header file
 \#	Makefile
 

@@ -6,7 +6,7 @@
 /*   By: minpple <minpple@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 13:54:38 by minpple           #+#    #+#             */
-/*   Updated: 2025/12/10 15:27:15 by minpple          ###   ########.fr       */
+/*   Updated: 2025/12/10 16:46:33 by minpple          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,5 @@ int		ft_percent(void);
 void	ft_putchar(char c);
 int		ft_printf(const char *str, ...);
 int		ft_conversion(va_list ap, char c);
-int		ft_type(char c);
 
 #endif 

@@ -13,9 +13,7 @@ check with 'norminette', add a main.c or uncomment the main in ft_print.c then '
 
 **--- Resources ---**
 
-printf : https://www.geeksforgeeks.org/c/printf-in-c/
-various article on stack overflow to especially understand the use of conversions
-no ai
+printf : https://www.geeksforgeeks.org/c/printf-in-c/ | various article on stack overflow to especially understand the use of conversions | no ai
 
 **--- Technical choices ---**
 

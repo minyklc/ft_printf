@@ -18,9 +18,13 @@ printf : https://www.geeksforgeeks.org/c/printf-in-c/ | various article on stack
 **--- Technical choices ---**
 
 \#	ft_print.c : contains prototype of ft_printf() + filters for conversions + commented main
+
 \#	put_conversion : functions that take in charge conversions that do not imply numbers
+
 \#	put_nbr : function for conversions that deal with numbers recursively
+
 \#	ft_printf.h : header file
+
 \#	Makefile
 
 ft_printf browses the string caracter by caracter, print with 'write' if a letter is encountered excepts for '%' caracter, which
